@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ฟอร์มลงทะเบียนศิษย์เก่า IT + IS</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .textend {
+            text-align: right;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2><center>ฟอร์มลงทะเบียนศิษย์เก่า IT + IS </center></h2>
+    <form action="/submit_form" method="post" enctype="multipart/form-data">
+        <label for="name">ชื่อ-สกุล:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="student_id">รหัสนักศึกษา:</label><br>
+        <input type="number" id="student_id" name="student_id" maxlength="10"><br>
+        <label for="gender">เพศ:</label><br>
+        <select id="course" name="course" >
+            <option value="null">NONE</option>
+            <option value="male">ชาย</option>
+            <option value="IS">หญิง</option>
+            <option value="IS">เพศทางเลือก</option>
+        </select><br>
+        <label for="year">ปีการศึกษาเข้าศึกษา:</label><br>
+        <input type="ืีnumber" id="year" name="year" maxlength="4"><br>
+        <label for="address">ที่อยู่:</label><br>
+        <input type="text" id="address" name="address"><br>
+        <label for="email">อีเมลล์:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="phone">เบอร์โทรติดต่อ:</label><br>
+        <input type="tel" id="phone" name="phone" maxlength="10"><br>
+        <label for="course">ชื่อหลักสุตร:</label><br>
+        <select id="course" name="course">
+            <option value="IT">IT</option>
+            <option value="IS">IS</option>
+        </select><br>
+        <label for="job">อาชีพปัจจุบัน:</label><br>
+        <input type="text" id="job" name="job"><br>
+        <label for="workplace">สถานที่ทำงาน:</label><br>
+        <input type="text" id="workplace" name="workplace"><br>
+        <label for="job_type">ประเภทงานที่ทำ:</label><br>
+        <select id="job_type" name="job_type">
+            <option value="Web Developer">Web Developer</option>
+            <option value="SA">SA</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+        </select><br>
+        <label for="photo">รูปถ่ายตนเอง:</label><br>
+        <input type="file" id="photo" name="photo" accept="image/*"><br>
+        <input type="submit" value="ส่ง">
+    </form>
+    <h3>design by 6540011047 and 6540011047</h3>
+</body>
+</html>
