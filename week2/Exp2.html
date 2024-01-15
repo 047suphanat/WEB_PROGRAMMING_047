@@ -3,20 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ข้าวผัดกุ้ง 6540011047 Suphanat Kaewmeesri</title>
+    <title>ข้าวผัดกุ้ง 6540011047 Suphanat Kaewmeesri</title>
     <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container{
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
         .special-text {
             color: rgb(0, 217, 255);
             text-align: center;
-            font-size: 64px;
+            font-size: 3rem;
+            margin-top: 1rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+
+        img {
+            width: 100%;
+            max-width: 980px;
+            display: block;
+            margin: 1rem auto;
+            border: 5px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .border{
+            border: 5px solid red;
+            padding: 1px;
+            margin: 5px 5px 5px 5px auto;
+            margin-bottom: 20px;
+        }
+        .border2{
+            border: 5px solid green;
+            padding: 1px;
+            margin: 5px 5px 5px 5px auto;
+            margin-bottom: 20px;
+        }
+        .border3{
+            border: 5px solid yellowgreen;
+            padding: 1px;
+            margin: 5px 5px 5px 5px auto;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 1rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+
+        ul, ol {
+            color: #555;
+            padding-left: 2rem;
+            margin-top: 0.5rem;
+        }
+
+        p {
+            color: #777;
+            font-size: 0.8rem;
+        }
+
+        form {
+            margin-top: 1rem;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
         }
     </style>
 </head>
 <body>
-    <h1 class="special-text">ข้าวผัดกุ้ง</h1>
-    <img src="image/rice.jpg" alt="" width="980px">
-    <h1>ส่วนผสม</h1>
-    <ul>
+
+    <header>
+        <h1>ข้าวผัดกุ้ง 6540011047 Suphanat Kaewmeesri</h1>
+    </header>
+    <div class="container">
+        <h2 class="special-text">ข้าวผัดกุ้ง</h2>
+    <img src="image/rice.jpg" alt="ข้าวผัดกุ้ง" width="980px">
+    <div class="border">
+        <h1>ส่วนผสม</h1>
+    <ol>
         <li>ข้าวสวย (ที่สุกแล้วและทำให้เย็น) - 2 ถ้วย</li>
         <li>กุ้งสด (ล้างและผ่าหลังถอดเส้นดำ) - 200 กรัม</li>
         <li>น้ำมันรำข้าว - 2 ช้อนโต๊ะ</li>
@@ -29,9 +134,10 @@
         <li>น้ำตาล - 1 ช้อนชา</li>
         <li>พริกไทย - ตามความชอบ</li>
         <li>ไข่ไก่ - 2 ฟอง</li>
-        <p>******************************************************************************************************************************************************************************</p>
-    </ul>
-    <h1>วิธีทำ</h1>
+        
+    </ol></div>
+    
+    <div class="border2"><h1>วิธีทำ</h1>
     <ol>
         <li>ตั้งกระทะใส่น้ำมันรำข้าว ให้ร้อน</li>
         <li>ใส่กระเทียมสับลงไปผัดจนหอม</li>
@@ -41,7 +147,9 @@
         <li>ตอกไข่ลงไปผัดให้สุก</li>
         <li>ปรุงรสด้วยซอสหอยนางรม ซีอิ๊วขาว ซอสปรุงรส น้ำตาล และพริกไทย</li>
         <li>ผัดให้เข้ากันอีกครั้งจนสุก</li>
-    </ol>
+    </ol></div>
+    
+    <div class="border3">
     <h1>คอมเมนต์</h1>
     <form action=""http://www.example.com/"" method="post">
      <label for="username: ">ชื่อผู้คอมเมนต์: </label>    
@@ -52,8 +160,8 @@
     <label for="text">คอมเมนต์ :  </label>  
     <textarea name="address" cols="20" rows="20">
     
-    </textarea>
-Example Domain
+    </textarea></div>
+    
 
 </body>
 </html>
