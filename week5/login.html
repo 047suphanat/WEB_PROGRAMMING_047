@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Handler</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .error {
+      color: red;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <form id="loginForm">
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required />
+        <p id="errorUsername" class="error"></p>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+        <p id="errorPassword" class="error"></p>
+      </div>
+      <input type="submit" value="login" />
+    </form>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelector("#loginForm").onsubmit = function (event) {
+        event.preventDefault(); // Prevent default form submission
+        let username = document.querySelector("#username").value;
+        let password = document.querySelector("#password").value;
+        let checkUsername = false;
+        let checkPassword = false;
+
+        if (username.length < 8) {
+          document.querySelector("#errorUsername").textContent = "ชื่อผู้ใช้ต้องมีอย่างน้อย 8 ตัวอักษร";
+        } else {
+          document.querySelector("#errorUsername").textContent = "";
+          checkUsername = true;
+        }
+
+        if (password.length < 8) {
+          document.querySelector("#errorPassword").textContent = "รหัสผ่านต้องมีอย่างน้อย 8 ตัวอักษร";
+        } else {
+          document.querySelector("#errorPassword").textContent = "";
+          checkPassword = true;
+        }
+
+        if (checkUsername && checkPassword) {
+          // Perform further actions like form submission or AJAX request
+          console.log("Form submitted successfully!");
+          // Reset the form
+          document.getElementById("loginForm").reset();
+        }
+      };
+    });
+  </script>
+</body>
+</html>
